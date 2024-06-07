@@ -3,7 +3,7 @@ FROM eclipse-temurin:17.0.3_7-jre-focal
 
 MAINTAINER Tremolo Security, Inc. - Docker <docker@tremolosecurity.com>
 
-RUN apt-get update;apt-get -y install openjdk-18-jre-headless curl apt-transport-https gnupg && \
+RUN apt-get update;apt-get -y curl apt-transport-https gnupg && \
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
     groupadd -r ouoperator -g 433 && \
     mkdir /usr/local/ouoperator && \
