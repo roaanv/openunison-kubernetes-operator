@@ -1,4 +1,5 @@
-FROM ubuntu:22.04
+#FROM ubuntu:22.04
+FROM eclipse-temurin:17.0.3_7-jre-focal
 
 MAINTAINER Tremolo Security, Inc. - Docker <docker@tremolosecurity.com>
 
